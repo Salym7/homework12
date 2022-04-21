@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&display=swap"
           rel="stylesheet">
-    rel="stylesheet">
+
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -21,12 +21,15 @@
     <div class=" menu ">
         <div class="container">
             <nav>
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">PORTFOLIO</a></li>
-                    <li><a href="">ABOUT US</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
+                <div class="navmenu">
+                    <div class="navig firstmeny"><a href="">HOME</a></div>
+                    <div class="navig"><a href="">PORTFOLIO</a></div>
+                    <div class="navig"><a href="">ABOUT US</a></div>
+                    <div class="navig"><a href="">CONTACT</a></div>
+
+                </div>
+
+
             </nav>
         </div>
     </div>
@@ -70,7 +73,7 @@
 
                 <div class="item">
                     <img src="../assets/manag.png" alt="setting">
-                    <h2>Management</h2>
+                    <h4>Management</h4>
                     <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit. At exerc itati onem, facere nisi
                         quisquam
                         ullam voluptatem..</p>
@@ -79,7 +82,7 @@
 
                 <div class="item">
                     <img src="../assets/desing.png" alt="pen">
-                    <h2>UI / UX Desing</h2>
+                    <h4>UI / UX Desing</h4>
                     <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit. A ab dolor excep turi fugiat iste
                         laboriosam minus optio possimus rem, tempore!</p>
 
@@ -87,7 +90,7 @@
 
                 <div class="item">
                     <img src="../assets/branding.png" alt="star">
-                    <h2>Logo / Branding</h2>
+                    <h4>Logo / Branding</h4>
                     <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit. A ab dolor excep turi fugiat iste
                         laboriosam minus optio possimus rem, tempore!</p>
 
@@ -95,7 +98,7 @@
 
                 <div class="item">
                     <img src="../assets/animation.png" alt="car">
-                    <h2>Animation</h2>
+                    <h4>Animation</h4>
                     <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit. A ab dolor excep turi fugiat iste
                         laboriosam minus optio possimus rem, tempore!</p>
 
@@ -170,8 +173,65 @@
     </section>
     <section class="design">
         <div class="container">
-            <div class="content">
-                
+            <div class="tips">
+                <h2>Design tips, tricks, and freebies. Delivered weekly</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
+                <div class="formsub">
+                    <form action="#">
+
+                        <label for="emailtext"></label>
+                        <input class="emailtext" type="text" id="emailtext" placeholder="Email Address...">
+
+
+                        <input class="button" type="submit" value="SUBSCRIBE">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="get">
+        <div class="container">
+            <div class="wrap1">
+                <h2>GET IN TOUCH</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore
+                    et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do
+                    eiusmod tempor incididunt ut labore et.</p>
+            </div>
+            <div class="wrapflex">
+                <div class="wrap1">
+                    <div class="getform">
+                        <form action="#">
+                            <div class="formflex">
+                                <div>
+                                    <label for="name"></label>
+                                    <input class="formname" type="text" id="name" placeholder="Name">
+                                </div>
+                                <div>
+                                    <label for="ym"></label>
+                                    <input class="formname" type="text" id="ym" placeholder="Your Mail">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="textarea"></label>
+                                <textarea class="formtext" name="formtext" id="textarea" cols="30" rows="10"
+                                          placeholder="Type your message"
+                                ></textarea>
+                            </div>
+
+                            <div>
+                                <input class="buttonget" type="submit" value="SEND MESSAGE">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h4>CONTACT INFO</h4>
+                    <p>Jalalabad 24 / A, Ambaarkhana, Sylhet,
+                        Bangladesh</p>
+                    <p>redwan@deviserweb.com</p>
+                    <p>(+88) 017 617 46373</p>
+
+                </div>
             </div>
         </div>
     </section>
@@ -180,7 +240,18 @@
 <footer>
 
     <div class="container">
-        <p>© Copyright @Junaed 2016, All rights reserved.</p>
+        <div class="flexfoot">
+            <div class="footcont">
+                <p>© Copyright @Junaed 2016, All rights reserved.</p>
+            </div>
+            <div class="footicont">
+                <img src="../assets/twitter.png" alt="twitter">
+                <img src="../assets/linkedIn.png" alt="linkedIn">
+                <img src="../assets/google.png" alt="google">
+                <img src="../assets/facebook.png" alt="facebook">
+            </div>
+        </div>
+
     </div>
 
 </footer>
