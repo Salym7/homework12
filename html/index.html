@@ -17,47 +17,56 @@
 <body>
 
 <header>
+    <div class="container">
 
-    <div class=" menu ">
-        <div class="container">
-            <nav>
-                <div class="navmenu">
-                    <div class="navig firstmeny"><a href="">HOME</a></div>
-                    <div class="navig"><a href="">PORTFOLIO</a></div>
-                    <div class="navig"><a href="">ABOUT US</a></div>
-                    <div class="navig"><a href="">CONTACT</a></div>
+        <nav>
 
-                </div>
+            <ul>
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
 
+        </nav>
 
-            </nav>
-        </div>
     </div>
 </header>
 
 <main>
 
-    <section class="banner">
 
+    <section class="about">
         <div class="container">
+            <div class="row">
 
-            <div class="item green">
-                <h1>OUR STRONG ORGANAISATION</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore
-                    et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</p>
-                <button type="button" name="show_more">Learn More</button>
+                <div class="col about__info">
+                    <h1 class="about__title">our strong organaisation</h1>
+
+                    <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do
+                        eiusmod tempor incididunt ut
+                        labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</p>
+
+                    <a class="btn about_contact" href="#">
+                        Contact Us
+                    </a>
+                </div>
+
+                <div class="col about__video">
+
+                    <div class="about__video-wrapper">
+                        <iframe height="315" src="https://www.youtube.com/embed/ePM1ak6GSr8"
+                                title="Hello world"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+
+                </div>
+
             </div>
-
-            <div class="item blue">
-                <img src="../assets/baner.png" alt="video">
-            </div>
-
-
         </div>
-
     </section>
-
-
+    
     <section class="content-block">
 
         <div class="container">

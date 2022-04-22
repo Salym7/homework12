@@ -7,49 +7,119 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
     color: #585858;
+    font-size: 16px;
 }
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+}
+
+
+.container {
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+.btn {
+    border: 2px solid #ff2d2d;
+    border-radius: 5px;
+    padding: 13px 53px;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+/* Header */
 
 header {
-    background: #f6f2f2;
-    padding-top: 30px;
+    padding: 30px 0 0 0;
+    background-color: #f6f2f2;
 }
 
-nav {
-    width: 480px;
-    margin: 0 auto;
+header nav {
+    background-color: #313030;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
 }
 
 header a {
-    font-size: 14px;
-    color: #e0e0e0;
-    text-decoration: none;
     font-weight: bold;
-
+    text-transform: uppercase;
+    color: white;
+    padding: 25px 30px;
 }
 
-.navmenu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around
-}
-
-.firstmeny {
+header a:hover,
+header .active a {
     background-color: #ff3f40;
+    transition: .3s;
+}
+/* About */
+
+
+.about {
+    padding: 110px 0;
+    background-color: #f6f2f2;
 }
 
-.navig {
-    width: 90px;
-    height: 90px;
-    text-align: center;
-    padding-top: 30px;
+.about .row {
+    gap: 110px;
+    align-items: center;
 }
 
-
-header .container {
-    background: #f6f2f2;
-    padding-top: 0;
+.about .col {
+    width: 50%;
 }
 
+.about .about__title {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 65px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.about .about__description {
+    max-width: 515px;
+    margin-bottom: 60px;
+}
+
+.about .about_contact {
+    background-color: #ff2d2d;
+    color: white;
+}
+
+.about .about_contact:hover {
+    background-color: transparent;
+    color: #ff2d2d;
+    transition: .3s;
+}
+
+.about .about__video-wrapper iframe {
+    width: 100%;
+    border: none;
+    box-shadow: 0 0 65px -20px black;
+}
+
+/*1212*/
 .banner h1 {
     font-size: 60px;
     font-weight: 800;
@@ -83,19 +153,13 @@ button {
     background: #f6f2f2;
 }
 
+
 .container {
-    max-width: 1250px;
+    max-width: 1280px;
+    padding: 0 15px;
     margin: 0 auto;
-    padding-top: 100px;
+    width: 100%;
 }
-
-header .container {
-    height: 90px;
-    background: #313030;
-    margin: 0 auto;
-
-}
-
 
 .wrapper {
     display: flex;
