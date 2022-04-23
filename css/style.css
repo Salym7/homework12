@@ -172,6 +172,11 @@ header .active a {
 
 }
 
+.about_learn:hover {
+    background-color: #ff2d2d;
+    color: white;
+}
+
 
 /*products*/
 
@@ -189,23 +194,15 @@ header .active a {
 
 .products .title {
     text-align: center;
-    width: 500px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
-.products p {
-    position: relative;
-    color: #585858;
-}
-
-.products p:after {
-    content: "";
-    position: absolute;
-    top: 80px;
-    width: 130px;
+.orangline {
+    max-width: 130px;
     height: 2px;
-    left: calc(50% - 65px);
     background: #ff3b3b;
+    margin: 32px auto 80px;
 }
 
 .productmenu ul {
@@ -234,21 +231,22 @@ header .active a {
 }
 
 .product-cont img {
-    width: 300px;
+    max-width: 300px;
     height: 300px;
     padding-bottom: 18px;
 }
 
-.product-cont {
-    display: flex;
+.product-cont .row {
     flex-wrap: wrap;
     justify-content: space-between;
 
 }
 
-.meat h2 {
-
+.meat {
     margin-top: 80px;
+}
+
+.meat h2 {
     margin-bottom: 40px;
     font-size: 42px;
     font-weight: bold;
@@ -260,35 +258,26 @@ header .active a {
     max-width: 500px;
 }
 
-.meat .title p {
-    position: relative
+.meat .orangline {
+    margin: 30px 0 60px
 }
 
-.meat .title p:after {
-    content: "";
-    position: absolute;
-    top: 80px;
-    width: 130px;
-    height: 2px;
-    left: 1px;
-    background: #ff3b3b;
+.team .row .contact {
+    flex-wrap: wrap;
 }
 
 .team {
-    padding: 100px 0;
-    display: flex;
-    flex-wrap: wrap;
-
+    margin-bottom: 110px;
 }
 
 .team img {
-    width: 330px;
+    max-width: 330px;
     height: 460px;
     margin-right: 60px;
 }
 
 .name {
-    width: 850px;
+    max-width: 850px;
 }
 
 .name p {
@@ -296,8 +285,8 @@ header .active a {
 }
 
 .name h3 {
-    margin-top: 17px;
-    margin-bottom: 40px;
+    margin-top: 15px;
+    margin-bottom: 30px;
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -318,7 +307,12 @@ header .active a {
     text-decoration: none;
     font-style: italic;
     color: #4c4c4c;
+    font-size: 18px;
 
+}
+
+.portfolio {
+    max-width: 850px;
 }
 
 .portfolio img {
@@ -327,10 +321,9 @@ header .active a {
     margin-right: 0;
 }
 
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between
+.portfolio .row {
+    gap: 20px;
+
 }
 
 .tips {
@@ -370,6 +363,13 @@ header .active a {
     border-radius: 10px;
     font-size: 18px;
 
+}
+
+.button:hover {
+    background-color: transparent;
+    color: #ff2d2d;
+    transition: .3s;
+    border: 2px solid #ff2d2d;
 }
 
 .formsub {
@@ -440,6 +440,13 @@ header .active a {
     background: #ff2d2d;
     font-size: 18px;
     font-weight: bold;
+}
+
+.buttonget:hover {
+    background-color: transparent;
+    color: #ff2d2d;
+    transition: .3s;
+    border: 2px solid #ff2d2d;
 }
 
 .contact h4 {
