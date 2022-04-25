@@ -10,14 +10,8 @@ body {
     font-size: 16px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
 a {
-    text-decoration: none;
     color: #000000;
     display: inline-block;
 }
@@ -43,12 +37,6 @@ a {
     text-transform: capitalize;
 }
 
-.container {
-    max-width: 1280px;
-    padding: 0 15px;
-    margin: 0 auto;
-    width: 100%;
-}
 
 /* Header */
 
@@ -96,7 +84,7 @@ header .active a {
     width: 50%;
 }
 
-.about .about__title {
+.about .about-title {
     font-weight: 800;
     font-size: 60px;
     line-height: 65px;
@@ -105,23 +93,23 @@ header .active a {
     margin-bottom: 35px;
 }
 
-.about .about__description {
+.about .about-description {
     max-width: 515px;
     margin-bottom: 60px;
 }
 
-.about .about_contact {
+.about .about-contact {
     background-color: #ff2d2d;
     color: white;
 }
 
-.about .about_contact:hover {
+.about .about-contact:hover {
     background-color: transparent;
     color: #ff2d2d;
     transition: .3s;
 }
 
-.about .about__video-wrapper iframe {
+.about .about-video-wrapper iframe {
     width: 100%;
     border: none;
     box-shadow: 0 0 65px -20px black;
@@ -152,27 +140,27 @@ header .active a {
 }
 
 
-.mainwrap h2 {
+.main-wrap h2 {
     margin: 0 0 30px;
     font-size: 42px;
     font-weight: bold;
 
 }
 
-.mainwrap {
+.main-wrap {
     padding-right: 130px;
 }
 
-.content-block .mainwrap p {
+.content-block .main-wrap p {
     margin-bottom: 50px;
 }
 
-.mainwrap a {
+.main-wrap a {
     color: #585858;
 
 }
 
-.about_learn:hover {
+.about-learn:hover {
     background-color: #ff2d2d;
     color: white;
 }
@@ -180,9 +168,18 @@ header .active a {
 
 /*products*/
 
-.products h2 {
+.products {
+    padding-top: 60px;
+}
 
-    margin-top: 80px;
+.grey-line {
+    margin: 0 auto 80px;
+    background: #ececec;
+    max-width: 1250px;
+    height: 2px;
+}
+
+.products h2 {
     margin-bottom: 40px;
     font-size: 42px;
     font-weight: bold;
@@ -198,14 +195,18 @@ header .active a {
     margin: 0 auto;
 }
 
-.orangline {
+.title p {
+    margin-bottom: 32px;
+}
+
+.orang-line {
     max-width: 130px;
     height: 2px;
     background: #ff3b3b;
-    margin: 32px auto 80px;
+    margin: 0 auto;
 }
 
-.productmenu ul {
+.product-menu ul {
     display: flex;
     list-style-type: none;
     font-size: 20px;
@@ -215,30 +216,37 @@ header .active a {
     margin: 100px auto 0;
 }
 
-.productmenu a {
+.product-menu a {
     font-size: 22px;
     text-decoration: none;
     color: #4c4c4c;
     font-weight: bold;
 }
 
-.productmenu .first-a {
+.product-menu .first-a {
     color: #ff2d2d;
 }
 
-.productmenu {
+.product-menu a:hover,
+.product-menu .first-a a {
+    color: #ff3f40;
+    transition: .3s;
+}
+
+
+.product-menu {
     margin-bottom: 60px;
 }
 
 .product-cont img {
     max-width: 300px;
     height: 300px;
-    padding-bottom: 18px;
 }
 
 .product-cont .row {
     flex-wrap: wrap;
-    justify-content: space-between;
+
+    gap: 16px;
 
 }
 
@@ -258,8 +266,9 @@ header .active a {
     max-width: 500px;
 }
 
-.meat .orangline {
-    margin: 30px 0 60px
+.meat .orang-line {
+    margin: 0 0 60px
+
 }
 
 .team .row .contact {
@@ -270,6 +279,7 @@ header .active a {
     margin-bottom: 110px;
 }
 
+
 .team img {
     max-width: 330px;
     height: 460px;
@@ -278,14 +288,16 @@ header .active a {
 
 .name {
     max-width: 850px;
+    padding-top: 15px;
 }
 
 .name p {
     width: 650px;
+    margin-bottom: 35px;
 }
 
 .name h3 {
-    margin-top: 15px;
+
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: bold;
@@ -295,7 +307,6 @@ header .active a {
 .name ul {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 35px;
     padding-bottom: 45px;
 }
 
@@ -304,7 +315,6 @@ header .active a {
 }
 
 .name ul li a {
-    text-decoration: none;
     font-style: italic;
     color: #4c4c4c;
     font-size: 18px;
@@ -334,15 +344,16 @@ header .active a {
 
 .design {
     background: #f5f0dd;
+    padding-top: 130px;
 }
 
 .tips h2 {
     font-size: 42px;
-    padding-bottom: 35px;
+    margin-bottom: 35px;
 }
 
 
-.emailtext {
+.email-text {
     width: 450px;
     height: 80px;
     background: white;
@@ -372,37 +383,35 @@ header .active a {
     border: 2px solid #ff2d2d;
 }
 
-.formsub {
-    margin-top: 40px;
+.tips p {
+    margin-bottom: 60px;
 }
 
-.get .wrap1 p {
-    position: relative;
+.wrap1 p {
+    margin-bottom: 30px;
 }
 
-.get .wrap1 p:after {
-    content: "";
-    position: absolute;
-    top: 120px;
-    width: 130px;
-    height: 2px;
-    left: 1px;
-    background: #ff3b3b;
+.wrap1 .orang-line {
+    margin: 0 0 60px 0;
+}
+
+.get {
+    padding-top: 100px;
 }
 
 .get h2 {
     font-size: 42px;
     font-weight: bold;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     color: #333333;
 }
 
 .wrap1 {
-    width: 730px;
-    margin-bottom: 140px;
+    max-width: 730px;
+
 }
 
-.formname {
+.form-name {
     width: 340px;
     height: 70px;
     border-radius: 10px;
@@ -414,24 +423,25 @@ header .active a {
 }
 
 
-.formflex {
+.form-flex {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 44px;
 
 }
 
-.formtext {
+.form-text {
     width: 730px;
     height: 250px;
     border-radius: 10px;
     background: #e5e5e5;
     border: none;
-    margin: 44px 0;
+    margin-bottom: 44px;
     padding-left: 50px;
     padding-top: 30px;
 }
 
-.buttonget {
+.button-get {
     width: 730px;
     height: 70px;
     border: none;
@@ -442,7 +452,7 @@ header .active a {
     font-weight: bold;
 }
 
-.buttonget:hover {
+.button-get:hover {
     background-color: transparent;
     color: #ff2d2d;
     transition: .3s;
@@ -469,10 +479,10 @@ header .active a {
 
 }
 
-.wrapflex {
+.wrap-flex {
     display: flex;
-    flex-wrap: nowrap
-
+    flex-wrap: nowrap;
+    margin-bottom: 130px;
 }
 
 .wrap h4 {
@@ -488,7 +498,7 @@ footer {
 
 }
 
-.flexfoot {
+.flex-foot {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
