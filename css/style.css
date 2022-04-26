@@ -121,7 +121,14 @@ header .active a {
 
 .content-block {
     padding-top: 100px;
+
 }
+
+.gray-line {
+    padding-bottom: 60px;
+    border-bottom: 2px solid #ececec;
+}
+
 
 .wrapper .row {
     flex-wrap: wrap;
@@ -170,14 +177,17 @@ header .active a {
 
 .products {
     padding-top: 60px;
+
+
 }
 
-.grey-line {
-    margin: 0 auto 80px;
-    background: #ececec;
-    max-width: 1250px;
-    height: 2px;
-}
+/*.grey-line {*/
+/*    margin: 0 auto 80px;*/
+/*    background: #ececec;*/
+/*    max-width: 1250px;*/
+/*    height: 2px;*/
+/*}*/
+
 
 .products h2 {
     margin-bottom: 40px;
