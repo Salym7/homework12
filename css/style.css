@@ -29,12 +29,14 @@ a {
 }
 
 .btn {
+    width: 250px;
     border: 2px solid #ff2d2d;
     border-radius: 5px;
     padding: 13px 53px;
     font-weight: 700;
     font-size: 18px;
     text-transform: capitalize;
+    text-align: center;
 }
 
 
@@ -130,7 +132,7 @@ header .active a {
 }
 
 
-.wrapper .row {
+.content-block .row {
     flex-wrap: wrap;
 }
 
@@ -214,7 +216,7 @@ header .active a {
     font-size: 20px;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 900px;
+    width: 100%;
     margin: 100px auto 0;
 }
 
@@ -241,7 +243,7 @@ header .active a {
 }
 
 .product-cont img {
-    max-width: 300px;
+    max-width: 24%;
     height: 300px;
 }
 
@@ -285,7 +287,7 @@ header .active a {
 
 
 .avatar {
-    width: 330px;
+    width: 33%;
     height: 460px;
     margin-right: 60px;
     background: #f5f0dd;
@@ -293,12 +295,12 @@ header .active a {
 
 
 .name {
-    max-width: 850px;
+    max-width: 77%;
     padding-top: 15px;
 }
 
 .name p {
-    width: 650px;
+    max-width: 650px;
     margin-bottom: 35px;
 }
 
@@ -343,9 +345,9 @@ header .active a {
     background: #f5f0dd;
 }
 
+
 .card-name {
     display: none;
-    width: 200px;
     height: 37px;
     margin-top: 178px;
     background: #7a786e;
@@ -359,7 +361,8 @@ header .active a {
     color: #f5f0dd;
     font-size: 18px;
     font-weight: 600;
-    padding: 7px 0 0 45px;
+    padding-top: 7px;
+    text-align: center;
 }
 
 /*design*/
@@ -436,7 +439,7 @@ header .active a {
 }
 
 .wrap1 {
-    max-width: 730px;
+    max-width: 60%;
 
 }
 
@@ -456,6 +459,7 @@ header .active a {
     display: flex;
     justify-content: space-between;
     margin-bottom: 44px;
+    gap: 20px;
 
 }
 
@@ -513,8 +517,7 @@ header .active a {
 .contact {
     background: #2d2d2d;
     color: #e5e5e5;
-    padding-top: 120px;
-    padding-left: 80px;
+    padding: 120px 10px 0 80px;
     margin-left: 100px;
     height: 484px;
 
@@ -555,5 +558,318 @@ footer .container {
 footer img {
     padding-left: 18px;
 }
+
+@media (max-width: 1280px) {
+
+    .container {
+        max-width: 1024px;
+    }
+
+    .about .about-title {
+        font-weight: 800;
+        font-size: 45px;
+    }
+
+    .main-wrap h2 {
+        font-size: 30px;
+    }
+
+    .item {
+        width: 43%;
+    }
+
+    .product-cont img {
+        max-width: 230px;
+        height: 230px;
+    }
+
+    .avatar {
+        height: 415px;
+        margin-right: 40px;
+    }
+
+    .team-block {
+        width: 160px;
+        height: 170px;
+        background: #f5f0dd;
+    }
+
+
+    .card-name {
+        display: none;
+        height: 37px;
+        margin-top: 132px;
+    }
+
+    .contact h4:before {
+        display: none;
+
+    }
+
+    .contact {
+        padding: 120px 20px 0 60px;
+        margin-left: 80px;
+        height: 484px;
+
+    }
+
+    .form-name {
+        width: 100%;
+    }
+
+    .form-text {
+        width: 100%;
+    }
+
+    .button-get {
+        width: 100%;
+    }
+
+
+    .col {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 767px;
+    }
+
+    .about .row {
+        flex-wrap: wrap;
+    }
+
+    .about .col {
+        width: 100%;
+    }
+
+    .about-info {
+        margin-bottom: 50px;
+    }
+
+    .btn {
+        width: 300px;
+    }
+
+    .avatar {
+        width: 320px;
+    }
+
+    .wrap {
+        width: 100%;
+    }
+
+    .main-wrap {
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .name {
+        max-width: 100%;
+        padding-top: 30px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .about-description {
+        max-width: 100%;
+    }
+
+    .product-menu a {
+        font-size: 18px;
+    }
+
+    .team-row {
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .product-menu a {
+        font-size: 15px;
+    }
+
+    .form-name {
+        width: 260px;
+    }
+
+    .name {
+        max-width: 100%;
+    }
+
+    .portfolio .row {
+        flex-wrap: wrap;
+    }
+
+    .tips h2 {
+        font-size: 32px;
+        margin-bottom: 19px;
+    }
+
+    .product-cont img {
+        max-width: 200px;
+        height: 200px;
+    }
+
+    .design {
+        padding-top: 70px;
+    }
+
+    .email-text {
+        width: 300px;
+    }
+
+    .wrap-flex {
+        flex-wrap: wrap;
+        display: inline;
+    }
+
+    .wrap {
+        width: 100%;
+    }
+
+    .wrap1 {
+        max-width: 100%;
+    }
+
+    .contact {
+        margin-top: 60px;
+        margin-left: 0;
+        margin-bottom: 10px;
+        padding: 60px 20px 0 20px;
+        height: 300px;
+        max-width: 100%;
+
+    }
+
+    footer .container {
+        padding: 30px 10px;
+
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        display: none;
+    }
+
+    .form-name {
+        width: 100%;
+    }
+
+    .wrap h4 {
+        font-size: 20px;
+    }
+
+    .about {
+        padding: 50px 0;
+    }
+
+    .product-menu ul {
+        gap: 10px;
+    }
+
+    .about .about-title {
+        font-size: 35px;
+        line-height: 1.5;
+        letter-spacing: 3px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    .meat h2 {
+        font-size: 35px;
+    }
+
+    .get h2 {
+        font-size: 35px;
+    }
+
+    .get {
+        padding-top: 60px;
+    }
+
+    .email-text {
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .tips {
+        padding-bottom: 100px;
+    }
+
+    .form-flex {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .form-name {
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .form-text {
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .foot-icont {
+        margin-top: 20px;
+    }
+
+    .flex-foot {
+        justify-content: center;
+    }
+
+    .product-cont img {
+        width: calc(50% - 16px);
+    }
+}
+
+@media (max-width: 425px) {
+
+    .about .about-title {
+        font-size: 30px;
+    }
+
+    .product-cont img {
+        height: 180px;
+    }
+
+    .products h2 {
+        font-size: 30px;
+    }
+
+    .card-name p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 370px) {
+    .product-cont img {
+        width: inherit;
+    }
+}
+
+
+
+
 
 
