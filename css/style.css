@@ -369,13 +369,12 @@ header .active a {
 
 .design {
     background: #f5f0dd;
-    padding-top: 130px;
+    padding: 130px 0;
 }
 
 .tips {
     text-align: center;
     color: #fdfcf8;
-    padding-bottom: 140px;
 }
 
 .tips h2 {
@@ -519,8 +518,6 @@ header .active a {
     color: #e5e5e5;
     padding: 120px 10px 0 80px;
     margin-left: 100px;
-    height: 484px;
-
 }
 
 .wrap-flex {
@@ -601,10 +598,14 @@ footer img {
         margin-top: 132px;
     }
 
+    .content-block {
+        padding-top: 40px;
+    }
+
     .contact h4:before {
         display: none;
-
     }
+
 
     .contact {
         padding: 120px 20px 0 60px;
@@ -636,20 +637,26 @@ footer img {
         max-width: 767px;
     }
 
+    .get {
+        padding-top: 50px;
+    }
+
+    .about {
+        padding: 45px 0;
+    }
+
     .about .row {
         flex-wrap: wrap;
+        gap: 80px
     }
 
     .about .col {
         width: 100%;
     }
 
-    .about-info {
-        margin-bottom: 50px;
-    }
 
     .btn {
-        width: 300px;
+        width: 450px;
     }
 
     .avatar {
@@ -675,6 +682,7 @@ footer img {
     }
 
     .about-description {
+        margin-bottom: 40px;
         max-width: 100%;
     }
 
@@ -686,7 +694,30 @@ footer img {
         flex-wrap: wrap;
     }
 
+    .content-block .main-wrap p {
+        margin-bottom: 30px;
+    }
 
+    .gray-line {
+        padding-bottom: 20px;
+    }
+
+    .product-menu ul {
+        margin: 70px auto 0;
+    }
+
+    .products {
+        padding-top: 40px;
+    }
+
+    .product-cont img {
+        width: calc(25% - 16px);
+        height: 180px;
+    }
+
+    .design {
+        padding: 60px 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -694,8 +725,12 @@ footer img {
         font-size: 15px;
     }
 
+    .width-imput {
+        width: 50%;
+    }
+
     .form-name {
-        width: 260px;
+        width: 100%;
     }
 
     .name {
@@ -711,14 +746,6 @@ footer img {
         margin-bottom: 19px;
     }
 
-    .product-cont img {
-        max-width: 200px;
-        height: 200px;
-    }
-
-    .design {
-        padding-top: 70px;
-    }
 
     .email-text {
         width: 300px;
@@ -751,6 +778,10 @@ footer img {
         padding: 30px 10px;
 
     }
+
+    .team-block {
+        width: calc(25% - 16px);
+    }
 }
 
 @media (max-width: 576px) {
@@ -774,10 +805,18 @@ footer img {
         gap: 10px;
     }
 
+    .products h2 {
+        margin-bottom: 20px;
+    }
+
     .about .about-title {
         font-size: 35px;
         line-height: 1.5;
         letter-spacing: 3px;
+    }
+
+    .width-imput {
+        width: 100%;
     }
 
     .btn {
@@ -794,10 +833,11 @@ footer img {
 
     .get h2 {
         font-size: 35px;
+        margin-bottom: 30px;
     }
 
     .get {
-        padding-top: 60px;
+        padding-top: 40px;
     }
 
     .email-text {
@@ -811,9 +851,6 @@ footer img {
         margin-left: 0;
     }
 
-    .tips {
-        padding-bottom: 100px;
-    }
 
     .form-flex {
         display: block;
@@ -841,6 +878,10 @@ footer img {
     .product-cont img {
         width: calc(50% - 16px);
     }
+
+    .team-block {
+        height: 150px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -860,11 +901,15 @@ footer img {
     .card-name p {
         font-size: 14px;
     }
+
+    .team-block {
+        width: calc(50% - 16px);
+    }
 }
 
 @media (max-width: 370px) {
     .product-cont img {
-        width: inherit;
+        width: 100%;
     }
 }
 
