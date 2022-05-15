@@ -1,13 +1,37 @@
+:root {
+    --accent-color: #ff2d2d;
+    --main-font-color: #585858;
+    --font-color-white: #ffffff;
+
+
+    --main-bg: #313030;
+    --second-bg: #f6f2f2;
+    --three-bg: #f5f0dd;
+    --form-bg: #e5e5e5;
+
+    --font-md: 16px;
+    --font-mf: 18px;
+    --font-mg: 22px;
+    --font-lg: 24px;
+    --font-xl: 42px;
+    --font-xxl: 60px;
+
+    --main-font-family: 'Open Sans', sans-serif;
+
+    --content-width: 1280px;
+}
+
+
 * {
     box-sizing: border-box;
 
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--main-font-family);
     line-height: 1.5;
-    color: #585858;
-    font-size: 16px;
+    color: var(--main-font-color);
+    font-size: var(--font-md);
 }
 
 
@@ -18,7 +42,7 @@ a {
 
 
 .container {
-    max-width: 1280px;
+    max-width: var(--content-width);
     padding: 0 15px;
     margin: 0 auto;
     width: 100%;
@@ -30,11 +54,11 @@ a {
 
 .btn {
     width: 250px;
-    border: 2px solid #ff2d2d;
+    border: 2px solid var(--accent-color);
     border-radius: 5px;
     padding: 13px 53px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: var(--font-mf) --font-mf;
     text-transform: capitalize;
     text-align: center;
 }
@@ -44,11 +68,11 @@ a {
 
 header {
     padding: 30px 0 0 0;
-    background-color: #f6f2f2;
+    background-color: var(--second-bg);
 }
 
 header nav {
-    background-color: #313030;
+    background-color: var(--main-bg);
 }
 
 header nav ul {
@@ -59,13 +83,13 @@ header nav ul {
 header a {
     font-weight: bold;
     text-transform: uppercase;
-    color: white;
+    color: var(--font-color-white);
     padding: 25px 30px;
 }
 
 header a:hover,
 header .active a {
-    background-color: #ff3f40;
+    background-color: var(--accent-color);
     transition: .3s;
 }
 
@@ -74,7 +98,7 @@ header .active a {
 
 .about {
     padding: 110px 0;
-    background-color: #f6f2f2;
+    background-color: var(--second-bg);
 }
 
 .about .row {
@@ -88,7 +112,7 @@ header .active a {
 
 .about .about-title {
     font-weight: 800;
-    font-size: 60px;
+    font-size: var(--font-xxl);
     line-height: 65px;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -101,13 +125,13 @@ header .active a {
 }
 
 .about-contact {
-    background-color: #ff2d2d;
-    color: white;
+    background-color: var(--accent-color);
+    color: var(--font-color-white);
 }
 
 .about-contact:hover {
     background-color: transparent;
-    color: #ff2d2d;
+    color: var(--accent-color);
     transition: .3s;
 }
 
@@ -151,7 +175,7 @@ header .active a {
 
 .main-wrap h2 {
     margin: 0 0 30px;
-    font-size: 42px;
+    font-size: var(--font-xl);
     font-weight: bold;
 
 }
@@ -165,13 +189,13 @@ header .active a {
 }
 
 .main-wrap a {
-    color: #585858;
+    color: var(--main-font-color);
 
 }
 
 .about-learn:hover {
-    background-color: #ff2d2d;
-    color: white;
+    background-color: var(--accent-color);
+    color: var(--font-color-white);
 }
 
 
@@ -185,11 +209,11 @@ header .active a {
 
 .products h2 {
     margin-bottom: 40px;
-    font-size: 42px;
+    font-size: var(--font-xl);
     font-weight: bold;
     line-height: 1.4;
     letter-spacing: 2px;
-    color: #585858;
+    color: var(--main-font-color);
 
 }
 
@@ -206,7 +230,7 @@ header .active a {
 .orang-line {
     max-width: 130px;
     height: 2px;
-    background: #ff3b3b;
+    background: var(--accent-color);
     margin: 0 auto;
 }
 
@@ -221,19 +245,19 @@ header .active a {
 }
 
 .product-menu a {
-    font-size: 22px;
+    font-size: var(--font-mg);
     text-decoration: none;
-    color: #4c4c4c;
+    color: var(--main-font-color);
     font-weight: bold;
 }
 
 .product-menu .first-a {
-    color: #ff2d2d;
+    color: var(--accent-color);
 }
 
 .product-menu a:hover,
 .product-menu .first-a a {
-    color: #ff3f40;
+    color: var(--accent-color);
     transition: .3s;
 }
 
@@ -262,7 +286,7 @@ header .active a {
 
 .meat h2 {
     margin-bottom: 40px;
-    font-size: 42px;
+    font-size: var(--font-xl);
     font-weight: bold;
     line-height: 1.4;
     letter-spacing: 2px;
@@ -290,7 +314,7 @@ header .active a {
     width: 33%;
     height: 460px;
     margin-right: 60px;
-    background: #f5f0dd;
+    background: var(--three-bg);
 }
 
 
@@ -324,8 +348,8 @@ header .active a {
 
 .name ul li a {
     font-style: italic;
-    color: #4c4c4c;
-    font-size: 18px;
+    color: var(--main-font-color);
+    font-size: var(--font-mf);
 
 }
 
@@ -342,7 +366,7 @@ header .active a {
 .team-block {
     width: 200px;
     height: 215px;
-    background: #f5f0dd;
+    background: var(--three-bg);
 }
 
 
@@ -350,7 +374,7 @@ header .active a {
     display: none;
     height: 37px;
     margin-top: 178px;
-    background: #7a786e;
+    background: var(--main-font-color);
 }
 
 .team-block:hover .card-name {
@@ -358,8 +382,8 @@ header .active a {
 }
 
 .card-name p {
-    color: #f5f0dd;
-    font-size: 18px;
+    color: var(--three-bg);
+    font-size: var(--font-mf);
     font-weight: 600;
     padding-top: 7px;
     text-align: center;
@@ -368,7 +392,7 @@ header .active a {
 /*design*/
 
 .design {
-    background: #f5f0dd;
+    background: var(--three-bg);
     padding: 130px 0;
 }
 
@@ -378,14 +402,14 @@ header .active a {
 }
 
 .tips h2 {
-    font-size: 42px;
+    font-size: var(--font-xl);
     margin-bottom: 35px;
 }
 
 .email-text {
     width: 450px;
     height: 80px;
-    background: white;
+    background: var(--font-color-white);
     border: none;
     padding-left: 40px;
     border-radius: 10px;
@@ -396,20 +420,20 @@ header .active a {
     margin-left: 20px;
     width: 210px;
     height: 80px;
-    background: #ff2d2d;
+    background: var(--accent-color);
     border: none;
     font-weight: bold;
-    color: white;
+    color: var(--font-color-white);
     border-radius: 10px;
-    font-size: 18px;
+    font-size: var(--font-mf);
 
 }
 
 .button:hover {
     background-color: transparent;
-    color: #ff2d2d;
+    color: var(--accent-color);
     transition: .3s;
-    border: 2px solid #ff2d2d;
+    border: 2px solid var(--accent-color);
 }
 
 .tips p {
@@ -431,10 +455,10 @@ header .active a {
 }
 
 .get h2 {
-    font-size: 42px;
+    font-size: var(--font-xl);
     font-weight: bold;
     margin-bottom: 50px;
-    color: #333333;
+    color: var(--main-font-color);
 }
 
 .wrap1 {
@@ -446,10 +470,10 @@ header .active a {
     width: 340px;
     height: 70px;
     border-radius: 10px;
-    background: #e5e5e5;
+    background: var(--form-bg);
     border: none;
     padding-left: 50px;
-    font-size: 18px;
+    font-size: var(--font-mf);
     resize: none;
 }
 
@@ -466,7 +490,7 @@ header .active a {
     width: 730px;
     height: 250px;
     border-radius: 10px;
-    background: #e5e5e5;
+    background: var(--form-bg);
     border: none;
     margin-bottom: 44px;
     padding-left: 50px;
@@ -479,21 +503,21 @@ header .active a {
     height: 70px;
     border: none;
     border-radius: 10px;
-    color: white;
-    background: #ff2d2d;
-    font-size: 18px;
+    color: var(--font-color-white);
+    background: var(--accent-color);
+    font-size: var(--font-mf);
     font-weight: bold;
 }
 
 .button-get:hover {
     background-color: transparent;
-    color: #ff2d2d;
+    color: var(--accent-color);
     transition: .3s;
-    border: 2px solid #ff2d2d;
+    border: 2px solid var(--accent-color);
 }
 
 .contact h4 {
-    font-size: 18px;
+    font-size: var(--font-mf);
     margin-bottom: 40px;
     position: relative;
 }
@@ -504,7 +528,7 @@ header .active a {
     bottom: 0;
     width: 45px;
     height: 484px;
-    background: #2d2d2d;
+    background: var(--main-bg);
     right: -45px;
     top: -120px;
 }
@@ -514,8 +538,8 @@ header .active a {
 }
 
 .contact {
-    background: #2d2d2d;
-    color: #e5e5e5;
+    background: var(--main-bg);
+    color: var(--form-bg);
     padding: 120px 10px 0 80px;
     margin-left: 100px;
 }
@@ -527,7 +551,7 @@ header .active a {
 }
 
 .wrap h4 {
-    font-size: 24px;
+    font-size: var(--font-lg);
     font-weight: bolder;
     padding-top: 25px;
     padding-bottom: 15px;
@@ -536,7 +560,7 @@ header .active a {
 /*footer*/
 
 footer {
-    background: #313030;
+    background: var(--main-bg);
 
 }
 
@@ -558,8 +582,8 @@ footer img {
 
 @media (max-width: 1280px) {
 
-    .container {
-        max-width: 1024px;
+    :root {
+        --content-width: 1024px;
     }
 
     .about .about-title {
@@ -588,7 +612,6 @@ footer img {
     .team-block {
         width: 160px;
         height: 170px;
-        background: #f5f0dd;
     }
 
 
@@ -633,8 +656,8 @@ footer img {
 }
 
 @media (max-width: 1024px) {
-    .container {
-        max-width: 767px;
+    :root {
+        --content-width: 767px;
     }
 
     .get {
